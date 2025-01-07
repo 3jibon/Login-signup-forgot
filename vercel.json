@@ -1,4 +1,7 @@
 {
+      "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+    ],
   "builds": [
     {
       "src": "login-signup-forgot/wsgi.py",
