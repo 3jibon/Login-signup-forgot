@@ -1,0 +1,14 @@
+# Login-Signup-Forgot Project
+
+A Django-based web application for user authentication, including login, signup, and password reset functionalities.
+
+## Features
+- User registration with email verification
+- User login/logout
+- Password reset via email
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/3jibon/Login-signup-forgot.git
