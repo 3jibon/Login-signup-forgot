@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Login{% endblock title %}
+
+
+{% block body %}
+  <div class="wrapper">
+      <div class="logop">
+        <img class="slogo"
+          src="/static/img/eb5434c71da288bd25328cf21f7f63fe-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div class="text-center mt-4 name">K o L a</div>
+      <form method="post" action="{% url 'login' %}" class="p-3 mt-3">
+        {% csrf_token %}
+        <div class="form-field d-flex align-items-center">
+          <span class="bi bi-person fs-3 me-2"></span>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+            required
+          />
+        </div>
+        <div class="form-field d-flex align-items-center">
+          <span class="bi bi-key fs-3 me-2"></span>
+          <input
+            type="password"
+            name="password"
+            id="pwd"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <button type="submit" class="btn mt-3">Login</button>
+      </form>
+      <div class="text-center fs-6">
+        <a href="{% url 'recovery' %}">Forget password?</a> or <a href="{% url 'signup' %}">Sign up</a>
+      </div>
+    </div>
+{% endblock body %}
+  
+  

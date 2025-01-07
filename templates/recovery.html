@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Forgot Password{% endblock title %}
+
+{% block body %}
+<div class="wrapper">
+  <div class="logop">
+    <img
+      class="slogo"
+      src="/static/img/cheerful-cartoon-monkey-joyfully-eating-banana-perfect-stickers-playful-designs-vibrant-illustration-captures-fun-343345168-removebg-preview.png"
+      alt="Logo"
+    />
+  </div>
+  <div class="text-center mt-4 name">
+    Reset Password
+  </div>
+  
+  <form method="post" action="{% url 'password_reset' %}" class="p-3 mt-3">
+    {% csrf_token %}
+    
+    <!-- Email Input Field -->
+    <div class="form-field d-flex align-items-center mb-4">
+      <span class="biib bi bi-envelope fs-4 me-1"></span>
+      <input
+        type="email"
+        name="email"
+        id="id_email"
+        class="form-control"
+        placeholder="Enter your email"
+        required
+      />
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary mt-3 w-100">Reset Password</button>
+  </form>
+
+  <!-- Instructions -->
+  <div class="text-center mt-3">
+    <p>
+      Enter the email address associated with your account. A password reset link will be sent to this email.
+    </p>
+  </div>
+</div>
+{% endblock body %}
