@@ -1,1 +1,1 @@
-web: gunicorn todoProject.wsgi:application
+web: gunicorn todoProject.wsgi:application --timeout 120
