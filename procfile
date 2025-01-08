@@ -1,1 +1,1 @@
-web: gunicorn todoProject.wsgi:application --timeout 120
+web: gunicorn --workers 3 --worker-class gevent todoProject.wsgi:application
