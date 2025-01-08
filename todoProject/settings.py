@@ -5,7 +5,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECRET_KEY (from environment variable or fallback for local development)
-SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'your-fallback-secret-key')
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'Nikond53@@')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
