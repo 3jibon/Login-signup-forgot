@@ -101,10 +101,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Email configuration (for Gmail SMTP)
-# Email configuration (for Gmail SMTP)
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'experimentalfaru@gmail.com')  # Your Gmail address
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'eqeheefgrvzyawbq')  # Replace with your random password
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'your-random-email-password')  # Replace with your random password
