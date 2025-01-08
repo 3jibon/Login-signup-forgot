@@ -10,7 +10,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'Nikond53@@')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['https://login-signup-forgot-production.up.railway.app/', '127.0.0.1']
+ALLOWED_HOSTS = ['https://login-signup-forgot-production.up.railway.app', '127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [
@@ -106,4 +106,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'experimentalfaru@gmail.com')  # Your Gmail address
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'your-random-email-password')  # Replace with your random password
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', '')  # Replace with your random password
