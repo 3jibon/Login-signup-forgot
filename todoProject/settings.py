@@ -10,7 +10,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'Nikond53@@')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['your-railway-domain.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['https://login-signup-forgot-production.up.railway.app/', '127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [
