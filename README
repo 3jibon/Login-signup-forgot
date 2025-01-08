@@ -1,4 +1,4 @@
-# Login-Signup-Forgot Project
+# Login-Signup-Forgot Project (Django Authentication)
 
 A Django-based web application for user authentication, including login, signup, and password reset functionalities.
 
